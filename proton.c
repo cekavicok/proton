@@ -12,24 +12,21 @@ double div(double a, double b){
     return a/b;
 }
 double mod(double a, double b){
-    return a%b;
+   // return a % b;
+   
 }
 double sqre(double a){
     return pow(a,2);
 }
 double sqrt(double a){
-    sqrt(number);
+    sqrt(a);
 }
-int main(){
-
-}int sub(int a, int b) { 
-    return a - b;
-}
-
 int main(){
     int a, b;
+    printf("Izaberi broj {a b}");
     scanf("%d %d", &a, &b);
     char operacija;
+    printf("Izaberi operaciju { + - * /}");
     scanf("%c", &operacija);
     switch (operacija) {
     case '-':
