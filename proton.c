@@ -1,4 +1,5 @@
 #include <math.h>
+#include <stdio.h>
 double add(double a, double b){
     return a+b;
 }
@@ -11,29 +12,23 @@ double sub(double a, double b){
 double div(double a, double b){
     return a/b;
 }
-double mod(double a, double b){
+double mod(int a, int b){
     return a%b;
 }
 double sqre(double a){
     return pow(a,2);
 }
 double sqrt(double a){
-    sqrt(number);
-}
-int main(){
-
-}int sub(int a, int b) { 
-    return a - b;
+    sqrt(a);
 }
 
-int main(){
+void main(){
     int a, b;
-    scanf("%d %d", &a, &b);
+    scanf("%d %d /n", &a, &b);
     char operacija;
     scanf("%c", &operacija);
     switch (operacija) {
-    case '-':
-        
+    case '-': 
         break;
     case '+':
         // code block
@@ -44,6 +39,5 @@ int main(){
     case '/':
         // code block
         break;
+    }
 }
-
-} 
