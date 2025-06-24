@@ -24,6 +24,7 @@ double sqrt(double a){
 }
 int main(){
     int a, b;
+    //ddakdakdakdka
     double c = 0;
     printf("Izaberi broj {a b}");
     scanf("%d %d", &a, &b);
