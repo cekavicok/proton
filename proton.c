@@ -13,7 +13,7 @@ double div(double a, double b){
 }
 double mod(double a, double b){
    // return a % b;
-   
+
 }
 double sqre(double a){
     return pow(a,2);
@@ -30,15 +30,18 @@ int main(){
     scanf("%c", &operacija);
     switch (operacija) {
     case '-':
-        
+        sub(a,b);
         break;
     case '+':
+        add(a,b);
         // code block
         break;
     case '*':
         // code block
+        mul(a,b);
         break;
     case '/':
+    div(a,b);
         // code block
         break;
 }
