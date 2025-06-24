@@ -23,27 +23,29 @@ double sqrt(double a){
 }
 int main(){
     int a, b;
+    double c =0;
     printf("Izaberi broj {a b}");
-    scanf("%d %d", &a, &b);
+    scanf("%d %d /n", &a, &b);
     char operacija;
     printf("Izaberi operaciju { + - * /}");
     scanf("%c", &operacija);
     switch (operacija) {
     case '-':
-        sub(a,b);
+        c = sub(a,b);
         break;
     case '+':
-        add(a,b);
+        c =add(a,b);
         // code block
         break;
     case '*':
         // code block
-        mul(a,b);
+        c =mul(a,b);
         break;
     case '/':
-    div(a,b);
+        c = div(a,b);
+        
         // code block
         break;
 }
-
+    printf("result is %d", &c);
 } 
