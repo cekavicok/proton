@@ -1,4 +1,5 @@
 #include <math.h>
+#include <stdio.h>
 double add(double a, double b){
     return a+b;
 }
@@ -23,29 +24,29 @@ double sqrt(double a){
 }
 int main(){
     int a, b;
-    double c =0;
+    double c = 0;
     printf("Izaberi broj {a b}");
-    scanf("%d %d /n", &a, &b);
-    char operacija;
-    printf("Izaberi operaciju { + - * /}");
-    scanf("%c", &operacija);
+    scanf("%d %d", &a, &b);
+    int operacija;
+    printf("Izaberi operaciju: 1) - 2) + 3) * 4) / ");
+    scanf("%d", &operacija);
     switch (operacija) {
-    case '-':
+    case 1:
         c = sub(a,b);
         break;
-    case '+':
+    case 2:
         c =add(a,b);
         // code block
         break;
-    case '*':
+    case 3:
         // code block
         c =mul(a,b);
         break;
-    case '/':
+    case 4:
         c = div(a,b);
 
         // code block
         break;
-}
-    printf("result is %d", &c);
+    }
+    printf("result is %f", c);
 } 
